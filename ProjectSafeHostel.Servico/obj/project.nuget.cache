@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PYhlUgtS4gHyRZ5I2vQ6/r2X+tIjhdDYj4fzfQCn2Dqx+jgqtfJ+xK1CJl3yHV01jdSadEUazpxlED7nk9LqaQ==",
+  "dgSpecHash": "UZoPbvE8ZuFTq0AcFTqLkLIf9L/uoAbL0aOqllP+wZ2s9AUvGyyzw1C1L4hvxIg20KqL7+fat4cTJrK6Kb5CCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\n\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\n\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

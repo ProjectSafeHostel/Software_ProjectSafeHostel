@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectSafeHostel.Dominio.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Dominio.ValueObject
 {
-    internal class Estoque
+    public class Estoque
     {
         public int ESTOQUE_ID { get; private set; }
-        public int PRODUTO_ID { get; private set; }
         public DateTime DATA_ENTRADA { get; private set; }
         public DateTime DATA_SAIDA { get; private set; }
         public DateTime DATA_VENCIMENTO { get; private set; }
@@ -18,5 +18,6 @@ namespace ProjectSafeHostel.Dominio.ValueObject
         public int QUANTIDADE_ITENS { get; private set; }
         public decimal PESO_TOTAL { get; private set; }
         public string USUARIO_RETIRADA_ESTOQUE { get; private set; }
+        public Produto PRODUTO_ID { get; private set; }
     }
 }

@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Dominio.Entities
 {
-    internal class Funcionario
+    public class Funcionario
     {
         public int FUNCIONARIO_ID { get; private set; }
         public string FUNCAO { get; private set; }
         public decimal SALARIO { get; private set; }
-        public int PESSOA_ID { get; private set; }
-        public int ALBERGUE_ID { get; private set; }
-        public int ADMINISTRADOR_IDS { get; private set; }
+        public int COLABORADOR_ID { get; private set; }
+
+        // Propriedade de navegação
+        public Colaborador COLABORADOR { get; private set; }
     }
 }
