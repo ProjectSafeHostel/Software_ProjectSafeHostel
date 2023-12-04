@@ -36,7 +36,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
             builder
                 .Property(p => p.PERECIVEL_FLAG)
                 .HasColumnName("PERECIVEL_FLAG")
-                .HasConversion(new BoolToZeroOneConverter<int>());
+                .HasColumnType("int");
 
             builder
                 .Property(p => p.PESO_ITEM)

@@ -9,8 +9,9 @@ namespace ProjectSafeHostel.Dominio.Interfaces
 {
     public interface IDoadorRepository
     {
-        IEnumerable<Doador> BuscarTodos();
-        IEnumerable<Doador> BuscarPorCpf(string cpf);
+        IEnumerable<object> BuscarTodosDoadoresComColaboradores();
+        Task<Doador> BuscarPorCpf(string cpf);
+        Task<Doador> BuscarPorCnpj(string cnpj);
         Task<Doador> BuscarPorId(int id);
         Task InserirDoador(Doador doador);
         Task AtualizarDoador(Doador doador);

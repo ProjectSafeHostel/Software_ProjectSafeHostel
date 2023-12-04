@@ -36,7 +36,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
             builder
                 .Property(c => c.ATIVO_FLAG)
                 .HasColumnName("ATIVO_FLAG")
-                .HasConversion(new BoolToZeroOneConverter<int>());
+                .HasColumnType("int");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ProjectSafeHostel.Dominio.ValueObject
     {
         public int REGISTRO_ID { get; private set; }
         public DateTime DATA_REGISTRO { get; private set; }
-        public bool TERMINACAO_FLAG { get; private set; }
+        public int TERMINACAO_FLAG { get; private set; }
         public string TERMINACAO_MOTIVO { get; private set; }
         public int DOACAO_ID { get; private set; }
         public int COLABORADOR_ID { get; private set; }

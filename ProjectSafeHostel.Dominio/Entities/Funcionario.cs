@@ -9,12 +9,25 @@ namespace ProjectSafeHostel.Dominio.Entities
 {
     public class Funcionario
     {
-        public int FUNCIONARIO_ID { get; private set; }
-        public string FUNCAO { get; private set; }
-        public decimal SALARIO { get; private set; }
-        public int COLABORADOR_ID { get; private set; }
+        #region - Construtores
+
+        public Funcionario() { }
+
+        public Funcionario(char fUNCAO, decimal sALARIO, int cOLABORADOR_ID)
+        {
+            FUNCAO = fUNCAO;
+            SALARIO = sALARIO;
+            COLABORADOR_ID = cOLABORADOR_ID;
+        }
+
+        #endregion
+
+        public int FUNCIONARIO_ID { get; set; }
+        public char FUNCAO { get; set; }
+        public decimal SALARIO { get; set; }
+        public int COLABORADOR_ID { get; set; }
 
         // Propriedade de navegação
-        public Colaborador COLABORADOR { get; private set; }
+        public Colaborador COLABORADOR { get; set; }
     }
 }

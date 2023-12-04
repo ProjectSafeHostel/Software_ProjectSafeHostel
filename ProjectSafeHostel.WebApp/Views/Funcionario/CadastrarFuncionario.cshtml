@@ -1,0 +1,88 @@
+﻿@using ProjectSafeHostel.Servico.ViewModels.Cadastros;
+@model CadastrarFuncionarioViewModel
+
+<style>
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    h1{
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px black solid;
+        box-sizing: border-box;
+    }
+
+    .label-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    #Colaborador_NOME {
+        flex: 1;
+    }
+
+    #Colaborador_SOBRENOME {
+        flex: 1;
+    }
+</style>
+
+<h1>Cadastrar Funcionário</h1>
+<br />
+<br />
+<form asp-action="Post" asp-controller="Funcionario" method="POST">
+    <label>Nome:</label>
+    <input type="text" required maxlength="20" asp-for="Colaborador.NOME" />
+
+    <label>Sobrenome:</label>
+    <input type="text" required maxlength="120" asp-for="Colaborador.SOBRENOME" />
+
+    <label>CPF:</label>
+    <input type="text" required maxlength="11" asp-for="Colaborador.CPF" />
+
+    <label>Data de Nascimento:</label>
+    <input type="datetime" required asp-for="Colaborador.DATA_NASCIMENTO" />
+
+    <label>Função:</label>
+    <select asp-for="Funcionario.FUNCAO" >
+        <option value="0">0 - Cliente</option>
+        <option value="1">1 - Estoque</option>
+    </select>
+
+    <label>Salário:</label>
+    <input type="number" required asp-for="Funcionario.SALARIO" />
+
+    <label>Logradouro:</label>
+    <input type="text" required asp-for="Endereco.LOGRADOURO" />
+
+    <label>Número:</label>
+    <input type="text" required maxlength="4" asp-for="Endereco.NUMERO" />
+
+    <label>Complemento:</label>
+    <input type="text" asp-for="Endereco.COMPLEMENTO" />
+
+    <label>Cidade:</label>
+    <input type="text" required asp-for="Endereco.CIDADE" />
+
+    <label>CEP:</label>
+    <input type="text" asp-for="Endereco.CEP" />
+
+    <button type="submit" class="btn btn-xs bg-blue-500 text-white px-4 py-2 transition duration-300 ease-in-out transform hover:bg-blue-600 hover:scale-105">
+        Cadastrar Funcionário
+    </button>
+</form>

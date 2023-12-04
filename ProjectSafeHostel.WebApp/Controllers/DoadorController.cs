@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectSafeHostel.Dados.EntityFramework;
 using ProjectSafeHostel.Servico.Interfaces;
+using ProjectSafeHostel.Servico.ViewModels.Cadastros;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
 
 namespace ProjectSafeHostel.WebApp.Controllers
 {
@@ -34,10 +36,10 @@ namespace ProjectSafeHostel.WebApp.Controllers
         }
 
 
-        [HttpGet("buscarporcpf/{cpf}")]
-        public IActionResult GetPorCpf(string cpf)
+        [HttpGet("buscarporcpfcnpj/{cpfCnpj}")]
+        public IActionResult GetPorCpf(string cpfCnpj)
         {
-            return Ok(_doadorService.BuscarPorCpf(cpf));
+            return Ok(_doadorService.BuscarPorCpfCnpj(cpfCnpj));
         }
 
 
@@ -47,9 +49,9 @@ namespace ProjectSafeHostel.WebApp.Controllers
         #region - POST
 
         [HttpPost("adicionar")]
-        public async Task<IActionResult> Post(NovoDoadorViewModel novoDoadorViewModel)
+        public async Task<IActionResult> Post([FromBody] CadastrarDoadorViewModel novoDoador)
         {
-            await _doadorService.InserirDoador(novoDoadorViewModel);
+            await _doadorService.InserirDoador(novoDoador);
 
             return Ok("Doador cadastrado com sucesso");
         }

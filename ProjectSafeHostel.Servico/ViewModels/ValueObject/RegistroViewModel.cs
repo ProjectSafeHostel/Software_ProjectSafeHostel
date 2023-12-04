@@ -10,7 +10,7 @@ namespace ProjectSafeHostel.Servico.ViewModels.ValueObject
     {
         public int REGISTRO_ID { get; set; }
         public DateTime DATA_REGISTRO { get; set; }
-        public bool TERMINACAO_FLAG { get; set; }
+        public int TERMINACAO_FLAG { get; set; }
         public string TERMINACAO_MOTIVO { get; set; }
         public int DOACAO_ID { get; set; }
         public int COLABORADOR_ID { get; set; }

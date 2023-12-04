@@ -11,13 +11,41 @@ namespace ProjectSafeHostel.Dominio.Entities
 {
     public class Endereco
     {
-        public int ENDERECO_ID { get; private set; }
-        public string LOGRADOURO { get; private set; }
-        public int NUMERO { get; private set; }
-        public string COMPLEMENTO { get; private set; }
-        public string CIDADE { get; private set; }
-        public string CEP { get; private set; }
-        public int COLABORADOR_ID { get; private set; }
+        #region - Construtores
+
+        public Endereco() { }
+
+        public Endereco(string lOGRADOURO, string nUMERO, string? cOMPLEMENTO, string cIDADE, string? cEP, int cOLABORADOR_ID)
+        {
+            LOGRADOURO = lOGRADOURO;
+            NUMERO = nUMERO;
+            COMPLEMENTO = cOMPLEMENTO;
+            CIDADE = cIDADE;
+            CEP = cEP;
+            COLABORADOR_ID = cOLABORADOR_ID;
+        }
+
+        public Endereco(int eNDERECO_ID, string lOGRADOURO, string nUMERO, string? cOMPLEMENTO, string cIDADE, string? cEP, int cOLABORADOR_ID)
+        {
+            ENDERECO_ID = eNDERECO_ID;
+            LOGRADOURO = lOGRADOURO;
+            NUMERO = nUMERO;
+            COMPLEMENTO = cOMPLEMENTO;
+            CIDADE = cIDADE;
+            CEP = cEP;
+            COLABORADOR_ID = cOLABORADOR_ID;
+        }
+
+        #endregion
+
+
+        public int ENDERECO_ID { get; set; }
+        public string LOGRADOURO { get; set; }
+        public string NUMERO { get; set; }
+        public string? COMPLEMENTO { get; set; }
+        public string CIDADE { get; set; }
+        public string? CEP { get; set; }
+        public int COLABORADOR_ID { get; set; }
 
         // Propriedade de navegação
         public Colaborador COLABORADOR { get; private set; }

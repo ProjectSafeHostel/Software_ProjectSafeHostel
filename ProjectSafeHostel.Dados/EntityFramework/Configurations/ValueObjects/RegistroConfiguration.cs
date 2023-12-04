@@ -31,7 +31,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.ValueObjects
             builder
                 .Property(r => r.TERMINACAO_FLAG)
                 .HasColumnName("TERMINACAO_FLAG")
-                .HasConversion(new BoolToZeroOneConverter<int>());
+                .HasColumnType("int");
 
             builder
                 .Property(r => r.TERMINACAO_MOTIVO)

@@ -1,4 +1,6 @@
 ﻿using ProjectSafeHostel.Dominio.Entities;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +12,8 @@ namespace ProjectSafeHostel.Servico.ViewModels.Entities.Doador
     public class DoadorViewModel
     {
         public int DOADOR_ID { get; set; }
-        public string CPF { get; set; }
-        public string CNPJ { get; set; }
-        public int ENDERECO_ID { get; set; }
+        public string? CPF { get; set; }
+        public string? CNPJ { get; set; }
         public int COLABORADOR_ID { get; set; }
-
-        // Propriedade de navegação
-        public Endereco ENDERECO { get; set; }
-        public Colaborador COLABORADOR { get; set; }
     }
 }

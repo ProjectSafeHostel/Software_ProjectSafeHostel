@@ -12,9 +12,17 @@ build_property.RootNamespace = ProjectSafeHostel.WebApp
 build_property.ProjectDir = C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.WebApp
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/CadastrarFuncionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cQ2FkYXN0cmFyRnVuY2lvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=

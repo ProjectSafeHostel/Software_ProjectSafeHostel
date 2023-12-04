@@ -11,7 +11,11 @@ namespace ProjectSafeHostel.Dominio.ValueObject
     {
         public int DESCARTE_ID { get; private set; }
         public string MOTIVO_DESCARTE { get; private set; }
-        public Produto PRODUTO_ID { get; private set; }
-        public Funcionario FUNCIONARIO_ID { get; private set; }
+        public int PRODUTO_ID { get; private set; }
+        public int FUNCIONARIO_ID { get; private set; }
+
+        // Propriedade de navegação
+        public Produto PRODUTO { get; private set; }
+        public Funcionario FUNCIONARIO { get; private set; }
     }
 }

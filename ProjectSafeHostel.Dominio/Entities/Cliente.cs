@@ -12,6 +12,6 @@ namespace ProjectSafeHostel.Dominio.Entities
         public int CLIENTE_ID { get; private set; }
         public string NOME { get; private set; }
         public string FOTO { get; private set; }
-        public bool ATIVO_FLAG { get; private set; }
+        public int ATIVO_FLAG { get; private set; }
     }
 }

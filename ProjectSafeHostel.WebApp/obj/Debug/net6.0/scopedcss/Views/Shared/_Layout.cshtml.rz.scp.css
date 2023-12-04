@@ -18,7 +18,7 @@ a[b-psp1ef53qw] {
 }
 
 .nav-pills .nav-link.active[b-psp1ef53qw], .nav-pills .show > .nav-link[b-psp1ef53qw] {
-  color: #fff;
+  color: white;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }

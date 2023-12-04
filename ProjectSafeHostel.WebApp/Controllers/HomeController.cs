@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace ProjectSafeHostel.WebApp.Controllers
 {
-    [Route("[Controller]")]
+    //[Route("[Controller]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

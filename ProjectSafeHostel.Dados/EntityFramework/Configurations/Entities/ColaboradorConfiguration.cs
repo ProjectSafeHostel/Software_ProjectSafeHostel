@@ -34,9 +34,9 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
                 .HasColumnType("varchar(120)");
 
             builder
-                .Property(c => c.IDADE)
-                .HasColumnName("IDADE")
-                .HasColumnType("int");
+                .Property(c => c.DATA_NASCIMENTO)
+                .HasColumnName("DATA_NASCIMENTO")
+                .HasColumnType("datetime");
 
             builder
                 .Property(c => c.TIPO)
@@ -61,7 +61,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
             builder
                 .Property(c => c.TERMINACAO_FLAG)
                 .HasColumnName("TERMINACAO_FLAG")
-                .HasConversion(new BoolToZeroOneConverter<int>());
+                .HasColumnType("int");
         }
     }
 }

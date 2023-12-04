@@ -34,16 +34,6 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
 
 
             builder
-                .Property(d => d.ENDERECO_ID)
-                .HasColumnName("ENDERECO_ID")
-                .HasColumnType("int");
-
-            builder
-                .HasOne(d => d.ENDERECO)
-                .WithMany()
-                .HasForeignKey(d => d.ENDERECO_ID);
-
-            builder
                 .Property(d => d.COLABORADOR_ID)
                 .HasColumnName("COLABORADOR_ID")
                 .HasColumnType("int");

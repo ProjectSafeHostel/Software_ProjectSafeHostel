@@ -2,6 +2,9 @@
 using ProjectSafeHostel.Dominio.Entities;
 using ProjectSafeHostel.Dominio.Interfaces;
 using ProjectSafeHostel.Servico.Interfaces;
+using ProjectSafeHostel.Servico.ViewModels.Buscas;
+using ProjectSafeHostel.Servico.ViewModels.Cadastros;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using System;
 using System.Collections.Generic;
@@ -16,11 +19,15 @@ namespace ProjectSafeHostel.Servico.Services
         #region - Atributos e Construtores
 
         private readonly IDoadorRepository _doadorRepository;
+        private readonly IColaboradorRepository _colaboradorRepository;
+        private readonly IEnderecoRepository _enderecoRepository;
         private IMapper _mapper;
 
-        public DoadorService(IDoadorRepository doadorRepository, IMapper mapper)
+        public DoadorService(IDoadorRepository doadorRepository, IColaboradorRepository colaboradorRepository, IEnderecoRepository enderecoRepository, IMapper mapper)
         {
             _doadorRepository = doadorRepository;
+            _colaboradorRepository = colaboradorRepository;
+            _enderecoRepository = enderecoRepository;
             _mapper = mapper;
         }
 
@@ -33,19 +40,45 @@ namespace ProjectSafeHostel.Servico.Services
             throw new NotImplementedException();
         }
 
-        public IEnumerable<DoadorViewModel> BuscarPorCpf(string cpf)
+        public async Task<DoadorViewModel> BuscarPorCpfCnpj(string cpfCnpj)
         {
-            throw new NotImplementedException();
+            Doador doador;
+            if (cpfCnpj.Length > 11)
+            {
+                doador = await _doadorRepository.BuscarPorCnpj(cpfCnpj);
+            }
+            else
+            {
+                doador = await _doadorRepository.BuscarPorCpf(cpfCnpj);
+            }
+
+            DoadorViewModel buscaDoadorCpfCnpj = _mapper.Map<DoadorViewModel>(doador);
+
+            return buscaDoadorCpfCnpj;
         }
 
-        public Task<DoadorViewModel> BuscarPorId(int id)
+        public async Task<DoadorViewModel> BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            var doador = await _doadorRepository.BuscarPorId(id);
+
+            DoadorViewModel buscaDoadorId = _mapper.Map<DoadorViewModel>(doador);
+
+            return buscaDoadorId;
         }
 
-        public IEnumerable<DoadorViewModel> BuscarTodos()
+        public IEnumerable<object> BuscarTodos()
         {
-            return (IEnumerable<DoadorViewModel>)_doadorRepository.BuscarTodos();
+            try
+            {
+                var doadoresComColaboradores = _doadorRepository.BuscarTodosDoadoresComColaboradores();
+
+                //return _mapper.Map<IEnumerable<BuscarDoadorViewModel>>(doadoresComColaboradores);
+                return doadoresComColaboradores;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao buscar todos os doadores com colaboradores: {ex.Message}");
+            }
         }
 
         public async Task ExcluirDoador(int id)
@@ -54,18 +87,32 @@ namespace ProjectSafeHostel.Servico.Services
 
             if (buscaDoador == null) throw new ApplicationException("Não é possível excluir um doador que não existe!");
 
+            int colaboradorID = buscaDoador.COLABORADOR_ID;
+
+            Colaborador colaboradorExcluido = await _colaboradorRepository.BuscarPorId(colaboradorID);
+            Endereco enderecoExcluido = await _enderecoRepository.BuscarPorId(colaboradorID);
+
+            await _enderecoRepository.ExcluirEndereco(enderecoExcluido);
             await _doadorRepository.ExcluirDoador(buscaDoador);
+            await _colaboradorRepository.ExcluirColaborador(colaboradorExcluido);
         }
 
-        public async Task InserirDoador(NovoDoadorViewModel doador)
+        public async Task InserirDoador(CadastrarDoadorViewModel doador)
         {
-            Doador novoDoador = _mapper.Map<Doador>(doador);
+            doador.Colaborador.TIPO = 'D';
+            var novoColaborador = _mapper.Map<Colaborador>(doador);
+            await _colaboradorRepository.InserirColaborador(novoColaborador);
+
+            int colaboradorId = await _colaboradorRepository.BuscarId();
+            doador.Doador.COLABORADOR_ID = colaboradorId;
+            doador.Endereco.COLABORADOR_ID = colaboradorId;
+
+            var novoDoador = _mapper.Map<Doador>(doador);
             await _doadorRepository.InserirDoador(novoDoador);
+
+            var novoEndereco = _mapper.Map<Endereco>(doador);
+            await _enderecoRepository.InserirEndereco(novoEndereco);
         }
-
-        #endregion
-
-        #region - Regras de Negócio
 
         #endregion
     }
