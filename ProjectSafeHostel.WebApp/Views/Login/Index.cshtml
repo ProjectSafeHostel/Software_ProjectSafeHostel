@@ -2,7 +2,113 @@
     ViewData["Title"] = "Tela de Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Login</h1>
-    <p>Aqui será o Login</p>
+@using ProjectSafeHostel.Servico.ViewModels;
+@model UsuarioViewModel
+
+
+<style>
+    .login-container{
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+        position: relative;
+
+        color: white;      
+    }
+
+    .formContainer {
+        background: blue;
+        backdrop-filter: blur(10px);
+        border-radius: 2rem;
+        padding: 4rem;
+        position: relative;
+        z-index: 99;
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .content{
+        flex:8;
+        padding:0 36px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color: white;
+
+        width: 100%;
+    }
+
+    .inputBox{
+        width: 100%;
+
+        background-color: white;
+        color: black;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .inputBox label {
+        font-size: 1.1rem;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        width: 80px;
+    }
+
+    .inputBox input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: black;
+        padding-left: 10px;
+        display: flex;
+        font-size: 1.1em;
+        padding: 1rem;
+
+        &::placeholder {
+          color: black;
+        }
+    }
+
+    .form-group button {
+        width: 100px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="login-container">
+    <div class="content">
+        <div class="formContainer">
+            <h2 style="font-size: 1.5rem">Safe Hostel - Login</h2>
+            <form style="width:100%" asp-action="Post" asp-controller="Autenticacao" method="POST">
+                <div class="inputBox">
+                    <label for="Usuario">Usuário</label>
+                    <input type="text" asp-for="Login" required maxlength="11" class="form-control" placeholder="Digite o seu CPF" />
+                </div>
+
+                <div class="inputBox">
+                    <label for="Senha">Senha</label>
+                    <input type="text" asp-for="Senha" required class="form-control" placeholder="Digite a sua senha">
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+        </div>    
+    </div> 
 </div>

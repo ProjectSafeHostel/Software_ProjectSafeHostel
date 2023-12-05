@@ -77,33 +77,19 @@ namespace ProjectSafeHostel.Dados.Repositories
                 //        TerminacaoFlag = d.COLABORADOR.TERMINACAO_FLAG
                 //    })
                 //    .Where(d => d.Tipo == 'D' &&
-                //            (d.CNPJ == null) &&
+                //            (d.CNPJ == null || d.CPF == null) &&
                 //            (d.DataTerminacao == null || d.DataTerminacao == DateTime.MinValue))
                 //    .ToList();
 
-                var doadoresComColaboradores = from doador in _contexto.Doador
-                                join colaborador in _contexto.Colaborador
-                                on doador.COLABORADOR_ID equals colaborador.COLABORADOR_ID
-                                where colaborador.TIPO == 'D' && 
-                                    (doador.CNPJ == null || doador.CPF == null) && 
-                                    (colaborador.DATA_TERMINACAO == null || colaborador.DATA_TERMINACAO == DateTime.MinValue)
-                                select new
-                                {
-                                    DoadorId = doador.DOADOR_ID,
-                                    doador.CPF,
-                                    doador.CNPJ,
-                                    ColaboradorId = colaborador.COLABORADOR_ID,
-                                    Nome = colaborador.NOME,
-                                    Sobrenome = colaborador.SOBRENOME,
-                                    DataNascimento = colaborador.DATA_NASCIMENTO,
-                                    Tipo = colaborador.TIPO,
-                                    ColaboradorCPF = colaborador.CPF,
-                                    DataContratacao = colaborador.DATA_CONTRATACAO,
-                                    DataTerminacao = colaborador.DATA_TERMINACAO,
-                                    TerminacaoFlag = colaborador.TERMINACAO_FLAG
-                                };
+                var query = from doador in _contexto.Doador
+                            join colaborador in _contexto.Colaborador
+                            on doador.COLABORADOR_ID equals colaborador.COLABORADOR_ID
+                            where colaborador.TIPO == 'D' &&
+                                  colaborador.DATA_TERMINACAO == null &&
+                                  (doador.CPF == null || doador.CNPJ == null)
+                            select doador;
 
-                return doadoresComColaboradores;
+                return query.ToList();
             }
             catch (Exception ex)
             {

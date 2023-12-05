@@ -51,7 +51,7 @@ namespace ProjectSafeHostel.Dados.Repositories
             }
             catch (Exception ex)
             {
-                throw new Exception($"Erro ao inserir a categoria: {ex.Message}");
+                throw new Exception($"Erro ao excluir a categoria: {ex.Message}");
             }
         }
 

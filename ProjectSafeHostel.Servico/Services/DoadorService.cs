@@ -101,11 +101,12 @@ namespace ProjectSafeHostel.Servico.Services
         {
             doador.Colaborador.TIPO = 'D';
             var novoColaborador = _mapper.Map<Colaborador>(doador);
+            novoColaborador.DATA_CONTRATACAO = DateTime.Now;
             await _colaboradorRepository.InserirColaborador(novoColaborador);
 
             int colaboradorId = await _colaboradorRepository.BuscarId();
             doador.Doador.COLABORADOR_ID = colaboradorId;
-            doador.Endereco.COLABORADOR_ID = colaboradorId;
+            doador.Endereco.COLABORADOR_ID = colaboradorId;          
 
             var novoDoador = _mapper.Map<Doador>(doador);
             await _doadorRepository.InserirDoador(novoDoador);

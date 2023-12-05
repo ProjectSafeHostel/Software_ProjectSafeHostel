@@ -25,8 +25,17 @@ builder.Services.AddAutoMapper(typeof(DomainToApplication), typeof(ApplicationTo
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
+
 builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
 builder.Services.AddScoped<IDoadorService, DoadorService>();
+
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+builder.Services.AddScoped<IProdutoFamiliaRepository, ProdutoFamiliaRepository>();
+builder.Services.AddScoped<IProdutoFamiliaService, ProdutoFamiliaService>();
 
 builder.Services.AddScoped<IProdutoCategoriaRepository, ProdutoCategoriaRepository>();
 builder.Services.AddScoped<IProdutoCategoriaService, ProdutoCategoriaService>();
@@ -58,6 +67,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

@@ -20,9 +20,9 @@ namespace ProjectSafeHostel.Dominio.Entities
             DATA_NASCIMENTO = dATA_NASCIMENTO;
             TIPO = tIPO;
             CPF = cPF;
-            DATA_CONTRATACAO = dATA_CONTRATACAO;
+            DATA_CONTRATACAO = DateTime.Now;
             DATA_TERMINACAO = dATA_TERMINACAO;
-            TERMINACAO_FLAG = tERMINACAO_FLAG;
+            TERMINACAO_FLAG = 0;
         }
 
         public Colaborador(int cOLABORADOR_ID, string nOME, string sOBRENOME, DateTime dATA_NASCIMENTO, char tIPO, string cPF, DateTime dATA_CONTRATACAO, DateTime? dATA_TERMINACAO, int tERMINACAO_FLAG)
@@ -46,8 +46,8 @@ namespace ProjectSafeHostel.Dominio.Entities
         public DateTime DATA_NASCIMENTO { get; set; }
         public char TIPO { get; set; }
         public string CPF { get; set; }
-        public DateTime DATA_CONTRATACAO { get; set; }
+        public DateTime DATA_CONTRATACAO { get; set; } = DateTime.Now;
         public DateTime? DATA_TERMINACAO { get; set; }
-        public int TERMINACAO_FLAG { get; set; }
+        public int TERMINACAO_FLAG { get; set; } = 0;
     }
 }

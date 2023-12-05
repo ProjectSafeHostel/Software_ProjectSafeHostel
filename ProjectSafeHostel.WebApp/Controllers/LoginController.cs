@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjectSafeHostel.Servico.ViewModels;
 
 namespace ProjectSafeHostel.WebApp.Controllers
 {

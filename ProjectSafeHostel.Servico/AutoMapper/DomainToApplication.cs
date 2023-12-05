@@ -1,10 +1,13 @@
 ﻿using AutoMapper;
 using ProjectSafeHostel.Dominio.Entities;
+using ProjectSafeHostel.Servico.ViewModels;
 using ProjectSafeHostel.Servico.ViewModels.Buscas;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Cliente;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoCategoria;
+using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoFamilia;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +20,13 @@ namespace ProjectSafeHostel.Servico.AutoMapper
     {
         public DomainToApplication()
         {
+            CreateMap<Cliente, ClienteViewModel>();
             CreateMap<Colaborador, ColaboradorViewModel>();
             CreateMap<Doador, DoadorViewModel>();
             CreateMap<Endereco, EnderecoViewModel>();
             CreateMap<ProdutoCategoria, ProdutoCategoriaViewModel>();
+            CreateMap<ProdutoFamilia, ProdutoFamiliaViewModel>();
+            CreateMap<Usuario, UsuarioViewModel>();
 
             #region - Buscar Doadores
 

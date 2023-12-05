@@ -57,6 +57,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework
         public DbSet<Produto> Produto { get; set; }
         public DbSet<ProdutoCategoria> ProdutoCategoria { get; set; }
         public DbSet<ProdutoFamilia> ProdutoFamilia { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
         #endregion
 
@@ -81,6 +82,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework
             modelBuilder.ApplyConfiguration(new ProdutoCategoriaConfiguration());
             modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
             modelBuilder.ApplyConfiguration(new ProdutoFamiliaConfiguration());
+            modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
 
             modelBuilder.ApplyConfiguration(new DescarteConfiguration());
             modelBuilder.ApplyConfiguration(new DoacaoConfiguration());

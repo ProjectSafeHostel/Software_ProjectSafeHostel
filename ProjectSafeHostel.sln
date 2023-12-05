@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentacao", "1 - Apresentacao", "{F8A5C3F8-8F77-495C-BAC6-435FE26DA771}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Apresentacao", "4 - Apresentacao", "{F8A5C3F8-8F77-495C-BAC6-435FE26DA771}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Dominio", "2 - Dominio", "{24C3B919-641F-464A-9883-5838F66E00BB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Dominio", "1 - Dominio", "{24C3B919-641F-464A-9883-5838F66E00BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Servico", "3 - Servico", "{5FC59C34-8F9A-4639-B534-439C5495899C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Dados", "4 - Dados", "{FCBD4671-79C6-49E7-B55D-835DB777E3F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Dados", "2 - Dados", "{FCBD4671-79C6-49E7-B55D-835DB777E3F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Util", "5 - Util", "{3C2DA114-5582-466E-ACAE-C1BDC305882A}"
 EndProject

@@ -5,6 +5,7 @@ using System.Reflection.Emit;
 using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Dominio.Entities
@@ -48,6 +49,7 @@ namespace ProjectSafeHostel.Dominio.Entities
         public int COLABORADOR_ID { get; set; }
 
         // Propriedade de navegação
+        [JsonIgnore]
         public Colaborador COLABORADOR { get; private set; }
     }
 }

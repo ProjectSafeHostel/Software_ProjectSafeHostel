@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj": {}
+    "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj": {
+    "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj",
+        "projectUniqueName": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj",
         "projectName": "ProjectSafeHostel.Dados",
-        "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj",
-        "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\obj\\",
+        "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj",
+        "packagesPath": "C:\\Users\\nycolas.carvalho\\.nuget\\packages\\",
+        "outputPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nycolas.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
-                "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj"
+              "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
+                "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj"
               }
             }
           }
@@ -73,21 +78,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
+    "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj",
+        "projectUniqueName": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj",
         "projectName": "ProjectSafeHostel.Dominio",
-        "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj",
-        "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\obj\\",
+        "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj",
+        "packagesPath": "C:\\Users\\nycolas.carvalho\\.nuget\\packages\\",
+        "outputPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nycolas.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,6 +104,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,21 +138,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj": {
+    "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj",
+        "projectUniqueName": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj",
         "projectName": "ProjectSafeHostel.Servico",
-        "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj",
-        "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\obj\\",
+        "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj",
+        "packagesPath": "C:\\Users\\nycolas.carvalho\\.nuget\\packages\\",
+        "outputPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nycolas.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,14 +164,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
-                "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj"
+              "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj": {
+                "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dominio\\ProjectSafeHostel.Dominio.csproj"
               }
             }
           }
@@ -197,21 +212,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj": {
+    "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj",
+        "projectUniqueName": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj",
         "projectName": "ProjectSafeHostel.WebApp",
-        "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj",
-        "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.WebApp\\obj\\",
+        "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.WebApp\\ProjectSafeHostel.WebApp.csproj",
+        "packagesPath": "C:\\Users\\nycolas.carvalho\\.nuget\\packages\\",
+        "outputPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nycolas.carvalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -219,17 +238,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj": {
-                "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj"
+              "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj": {
+                "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Dados\\ProjectSafeHostel.Dados.csproj"
               },
-              "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj": {
-                "projectPath": "C:\\Users\\n\\Documents\\Repositorios\\Uniaraxa\\4° Periodo\\Projeto Integrador\\ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj"
+              "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj": {
+                "projectPath": "D:\\Uniaraxa\\Projeto integrador\\Software_ProjectSafeHostel\\ProjectSafeHostel.Servico\\ProjectSafeHostel.Servico.csproj"
               }
             }
           }
@@ -276,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

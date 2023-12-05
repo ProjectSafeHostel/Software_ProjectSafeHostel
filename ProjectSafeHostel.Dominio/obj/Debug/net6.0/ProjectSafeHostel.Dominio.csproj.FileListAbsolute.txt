@@ -10,3 +10,15 @@ C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\Projec
 C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\refint\ProjectSafeHostel.Dominio.dll
 C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.pdb
 C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ref\ProjectSafeHostel.Dominio.dll
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\bin\Debug\net6.0\ProjectSafeHostel.Dominio.deps.json
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\bin\Debug\net6.0\ProjectSafeHostel.Dominio.dll
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\bin\Debug\net6.0\ProjectSafeHostel.Dominio.pdb
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.csproj.AssemblyReference.cache
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.AssemblyInfoInputs.cache
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.AssemblyInfo.cs
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.csproj.CoreCompileInputs.cache
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.dll
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\refint\ProjectSafeHostel.Dominio.dll
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ProjectSafeHostel.Dominio.pdb
+D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.Dominio\obj\Debug\net6.0\ref\ProjectSafeHostel.Dominio.dll

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Dominio.Entities
@@ -12,14 +13,15 @@ namespace ProjectSafeHostel.Dominio.Entities
     {
         #region - Construtores
 
-        public Doador(string cPF, string cNPJ, int cOLABORADOR_ID)
+        public Doador() { }
+        public Doador(string? cPF, string? cNPJ, int cOLABORADOR_ID)
         {
             CPF = cPF;
             CNPJ = cNPJ;
             COLABORADOR_ID = cOLABORADOR_ID;
         }
 
-        public Doador(int dOADOR_ID, string cPF, string cNPJ, int cOLABORADOR_ID)
+        public Doador(int dOADOR_ID, string? cPF, string? cNPJ, int cOLABORADOR_ID)
         {
             DOADOR_ID = dOADOR_ID;
             CPF = cPF;
@@ -36,6 +38,7 @@ namespace ProjectSafeHostel.Dominio.Entities
         public int COLABORADOR_ID { get; private set; }
 
         // Propriedade de navegação
+        [JsonIgnore]
         public Colaborador COLABORADOR { get; private set; }
     }
 }
