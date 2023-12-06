@@ -75,7 +75,6 @@ namespace ProjectSafeHostel.Servico.AutoMapper
 
             CreateMap<NovoClienteViewModel, Cliente>()
                .ConstructUsing(c => new Cliente(
-                   c.CLIENTE_ID,
                    c.NOME,
                    "",
                    0
@@ -176,6 +175,13 @@ namespace ProjectSafeHostel.Servico.AutoMapper
             #region - Usuario
 
             CreateMap<UsuarioViewModel, Usuario>()
+                .ConstructUsing(u => new Usuario(
+                    u.usuario_id,
+                    u.Login,
+                    u.Senha
+                ));
+
+            CreateMap<NovoUsuarioViewModel, Usuario>()
                 .ConstructUsing(u => new Usuario(
                     u.Login,
                     u.Senha

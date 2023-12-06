@@ -9,7 +9,7 @@ namespace ProjectSafeHostel.Servico.Interfaces
 {
     public interface IUsuarioService
     {
-        public Task<bool> Autenticar(UsuarioViewModel usuario);
+        public Task<bool> Autenticar(NovoUsuarioViewModel usuario);
         public Task Cadastrar(UsuarioViewModel usuario);
     }
 }

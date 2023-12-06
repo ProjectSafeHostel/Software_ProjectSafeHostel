@@ -3,7 +3,7 @@
 }
 
 @using ProjectSafeHostel.Servico.ViewModels;
-@model UsuarioViewModel
+@model NovoUsuarioViewModel
 
 
 <style>
@@ -93,7 +93,7 @@
     <div class="content">
         <div class="formContainer">
             <h2 style="font-size: 1.5rem">Safe Hostel - Login</h2>
-            <form style="width:100%" asp-action="Post" asp-controller="Autenticacao" method="POST">
+            <form style="width:100%" asp-action="Post" asp-controller="Login" method="POST">
                 <div class="inputBox">
                     <label for="Usuario">Usuário</label>
                     <input type="text" asp-for="Login" required maxlength="11" class="form-control" placeholder="Digite o seu CPF" />

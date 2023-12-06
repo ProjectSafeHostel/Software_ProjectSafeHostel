@@ -41,9 +41,9 @@ namespace ProjectSafeHostel.Servico.Services
             return buscaClientea;
         }
 
-        public async Task<IEnumerable<ClienteViewModel>> BuscarTodos()
+        public IEnumerable<ClienteViewModel> BuscarTodos()
         {
-            var cliente = await _clienteRepository.BuscarTodos();
+            var cliente = _clienteRepository.BuscarTodos();
 
             return _mapper.Map<IEnumerable<ClienteViewModel>>(cliente);
         }

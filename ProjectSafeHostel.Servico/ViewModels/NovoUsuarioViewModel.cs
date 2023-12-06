@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Servico.ViewModels
 {
-    public class UsuarioViewModel
+    public class NovoUsuarioViewModel
     {
-
-        public int usuario_id { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
     }

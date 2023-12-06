@@ -24,7 +24,7 @@ namespace ProjectSafeHostel.WebApp.Controllers
         #region - POST
 
         [HttpPost()]
-        public async Task<IActionResult> Post(UsuarioViewModel usuario)
+        public async Task<IActionResult> Post(NovoUsuarioViewModel usuario)
         {
             bool podeLogar = await _usuarioService.Autenticar(usuario);
 

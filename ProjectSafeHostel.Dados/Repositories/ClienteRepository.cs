@@ -35,11 +35,18 @@ namespace ProjectSafeHostel.Dados.Repositories
             return cliente;
         }
 
-        public async Task<IEnumerable<Cliente>> BuscarTodos()
+        public IEnumerable<Cliente> BuscarTodos()
         {
-            var cliente = await _contexto.Cliente.Where(c => c.ATIVO_FLAG == 0).ToListAsync();
+            try
+            {
+                var cliente = _contexto.Cliente.Where(c => c.ATIVO_FLAG == 0).ToList();
 
-            return cliente;
+                return cliente;
+            }        
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao excluir cliente: {ex.Message}");
+            }
         }
 
         public async Task ExcluirCliente(Cliente cliente)

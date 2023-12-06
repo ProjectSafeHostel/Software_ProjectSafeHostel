@@ -14,13 +14,18 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
         public void Configure(EntityTypeBuilder<Usuario> builder)
         {
             builder.ToTable("TB_SAFE_HOSTEL_USUARIO");
-            builder.HasKey(p => p.Login);
+            builder.HasKey(p => p.usuario_id);
+
+            builder
+                .Property(p => p.usuario_id)
+                .UseIdentityColumn()
+                .HasColumnName("USUARIO_ID")
+                .HasColumnType("int");
 
             builder
                 .Property(p => p.Login)
-                .UseIdentityColumn()
                 .HasColumnName("CPF")
-                .HasColumnType("CHAR(11)");
+                .HasColumnType("char(11)");
 
             builder
                 .Property(p => p.Senha)

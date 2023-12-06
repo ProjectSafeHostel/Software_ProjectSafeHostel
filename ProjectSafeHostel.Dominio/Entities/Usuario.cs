@@ -16,10 +16,18 @@ namespace ProjectSafeHostel.Dominio.Entities
             Senha = senha;
         }
 
+        public Usuario(int usuario_id, string login, string senha)
+        {
+            this.usuario_id = usuario_id;
+            Login = login;
+            Senha = senha;
+        }
+
         #endregion
 
         #region Propiedades
 
+        public int usuario_id { get; private set; }
         public string Login { get; private set; }
         public string Senha { get; private set; }
 

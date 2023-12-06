@@ -9,7 +9,7 @@ namespace ProjectSafeHostel.Dominio.Interfaces
 {
     public interface IClienteRepository
     {
-        Task<IEnumerable<Cliente>> BuscarTodos();
+        IEnumerable<Cliente> BuscarTodos();
         Task<Cliente> BuscarPorId(int id);
         Task InserirCliente(Cliente cliente);
         Task AtualizarCliente(Cliente cliente);

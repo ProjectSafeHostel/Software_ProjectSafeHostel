@@ -9,7 +9,7 @@ namespace ProjectSafeHostel.Servico.Interfaces
 {
     public interface IClienteService
     {
-        Task<IEnumerable<ClienteViewModel>> BuscarTodos();
+        IEnumerable<ClienteViewModel> BuscarTodos();
         Task<ClienteViewModel> BuscarPorId(int id);
         Task InserirCliente(NovoClienteViewModel novoCliente);
         Task AtualizarCliente(int id);
