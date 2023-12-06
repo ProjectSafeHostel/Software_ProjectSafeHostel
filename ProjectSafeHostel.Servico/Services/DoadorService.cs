@@ -70,10 +70,10 @@ namespace ProjectSafeHostel.Servico.Services
         {
             try
             {
-                var doadoresComColaboradores = _doadorRepository.BuscarTodosDoadoresComColaboradores();
+                var doadores = _doadorRepository.BuscarTodos();
 
                 //return _mapper.Map<IEnumerable<BuscarDoadorViewModel>>(doadoresComColaboradores);
-                return doadoresComColaboradores;
+                return doadores;
             }
             catch (Exception ex)
             {
@@ -100,18 +100,19 @@ namespace ProjectSafeHostel.Servico.Services
         public async Task InserirDoador(CadastrarDoadorViewModel doador)
         {
             doador.Colaborador.TIPO = 'D';
-            var novoColaborador = _mapper.Map<Colaborador>(doador);
+            var novoColaborador = _mapper.Map<Colaborador>(doador.Colaborador);
             novoColaborador.DATA_CONTRATACAO = DateTime.Now;
+            novoColaborador.DATA_TERMINACAO = null;
             await _colaboradorRepository.InserirColaborador(novoColaborador);
 
             int colaboradorId = await _colaboradorRepository.BuscarId();
             doador.Doador.COLABORADOR_ID = colaboradorId;
             doador.Endereco.COLABORADOR_ID = colaboradorId;          
 
-            var novoDoador = _mapper.Map<Doador>(doador);
+            var novoDoador = _mapper.Map<Doador>(doador.Doador);
             await _doadorRepository.InserirDoador(novoDoador);
 
-            var novoEndereco = _mapper.Map<Endereco>(doador);
+            var novoEndereco = _mapper.Map<Endereco>(doador.Endereco);
             await _enderecoRepository.InserirEndereco(novoEndereco);
         }
 

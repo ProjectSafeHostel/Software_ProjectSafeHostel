@@ -6,6 +6,7 @@ using ProjectSafeHostel.Servico.ViewModels.Entities.Cliente;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Produto;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoCategoria;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoFamilia;
 using System;
@@ -26,6 +27,7 @@ namespace ProjectSafeHostel.Servico.AutoMapper
             CreateMap<Endereco, EnderecoViewModel>();
             CreateMap<ProdutoCategoria, ProdutoCategoriaViewModel>();
             CreateMap<ProdutoFamilia, ProdutoFamiliaViewModel>();
+            CreateMap<Produto, ProdutoViewModel>();
             CreateMap<Usuario, UsuarioViewModel>();
 
             #region - Buscar Doadores

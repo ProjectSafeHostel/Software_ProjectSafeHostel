@@ -6,6 +6,7 @@ using ProjectSafeHostel.Servico.ViewModels.Entities.Cliente;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
+using ProjectSafeHostel.Servico.ViewModels.Entities.Produto;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoCategoria;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoFamilia;
 using System;
@@ -168,6 +169,31 @@ namespace ProjectSafeHostel.Servico.AutoMapper
                 .ConstructUsing(f => new ProdutoFamilia(
                     f.FAMILIA,
                     f.PRODUTO_CATEGORIA_ID
+                ));
+
+            #endregion
+
+            #region - Produto
+
+            CreateMap<ProdutoViewModel, Produto>()
+                .ConstructUsing(p => new Produto(
+                    p.PRODUTO_ID,
+                    p.PRODUTO_DESC,
+                    p.PRODUTO_VALOR,
+                    p.PERECIVEL_FLAG,
+                    p.PESO_ITEM,
+                    p.PRODUTO_FAMILIA_ID,
+                    p.ADMINISTRADOR_ID
+                ));
+
+            CreateMap<NovoProdutoViewModel, Produto>()
+                .ConstructUsing(p => new Produto(
+                    p.PRODUTO_DESC,
+                    p.PRODUTO_VALOR,
+                    p.PERECIVEL_FLAG,
+                    p.PESO_ITEM,
+                    p.PRODUTO_FAMILIA_ID,
+                    1
                 ));
 
             #endregion

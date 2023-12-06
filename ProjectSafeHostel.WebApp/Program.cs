@@ -37,6 +37,9 @@ builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IProdutoFamiliaRepository, ProdutoFamiliaRepository>();
 builder.Services.AddScoped<IProdutoFamiliaService, ProdutoFamiliaService>();
 
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
+
 builder.Services.AddScoped<IProdutoCategoriaRepository, ProdutoCategoriaRepository>();
 builder.Services.AddScoped<IProdutoCategoriaService, ProdutoCategoriaService>();
 

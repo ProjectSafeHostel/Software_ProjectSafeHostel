@@ -19,7 +19,7 @@ namespace ProjectSafeHostel.Dados.EntityFramework.Configurations.Entities
             builder
                 .Property(p => p.PRODUTO_FAMILIA_ID)
                 .UseIdentityColumn()
-                .HasColumnName("ADMINISTRADOR_ID")
+                .HasColumnName("PRODUTO_FAMILIA_ID")
                 .HasColumnType("int");
 
             builder

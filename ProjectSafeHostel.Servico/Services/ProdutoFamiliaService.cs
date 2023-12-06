@@ -45,11 +45,11 @@ namespace ProjectSafeHostel.Servico.Services
             return buscaFamilia;
         }
 
-        public async Task<IEnumerable<ProdutoFamiliaViewModel>> BuscarTodos()
+        public IEnumerable<ProdutoFamiliaViewModel> BuscarTodos()
         {
             try
             {
-                var familia = await _produtoFamiliaRepository.BuscarTodos();
+                var familia = _produtoFamiliaRepository.BuscarTodos();
 
                 return _mapper.Map<IEnumerable<ProdutoFamiliaViewModel>>(familia);
             }

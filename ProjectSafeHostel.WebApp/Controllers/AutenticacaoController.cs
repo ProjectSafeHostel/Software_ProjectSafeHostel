@@ -23,7 +23,7 @@ namespace ProjectSafeHostel.WebApp.Controllers
 
         #region - POST
 
-        [HttpPost()]
+        [HttpPost("autenticar")]
         public async Task<IActionResult> Post(NovoUsuarioViewModel usuario)
         {
             bool podeLogar = await _usuarioService.Autenticar(usuario);
@@ -33,7 +33,7 @@ namespace ProjectSafeHostel.WebApp.Controllers
                 BadRequest("Login inválido");
             }
 
-            return base.RedirectToAction("Index", "Home");
+            return Ok("Autenticado");
         }
 
         #endregion

@@ -11,6 +11,12 @@ using System.Threading.Tasks;
 
 namespace ProjectSafeHostel.Dados.Repositories
 {
+    public class DoadorColaboradorViewModel
+    {
+        public Doador Doador { get; set; }
+        public Colaborador Colaborador { get; set; }
+    }
+
     public class DoadorRepository : IDoadorRepository
     {
         #region - Atributos e Construtores
@@ -55,7 +61,7 @@ namespace ProjectSafeHostel.Dados.Repositories
             return await _contexto.Doador.FirstOrDefaultAsync(a => a.CNPJ == cnpj);
         }
 
-        public IEnumerable<object> BuscarTodosDoadoresComColaboradores()
+        public IEnumerable<object> BuscarTodos()
         {
             try
             {
@@ -81,15 +87,11 @@ namespace ProjectSafeHostel.Dados.Repositories
                 //            (d.DataTerminacao == null || d.DataTerminacao == DateTime.MinValue))
                 //    .ToList();
 
-                var query = from doador in _contexto.Doador
-                            join colaborador in _contexto.Colaborador
-                            on doador.COLABORADOR_ID equals colaborador.COLABORADOR_ID
-                            where colaborador.TIPO == 'D' &&
-                                  colaborador.DATA_TERMINACAO == null &&
-                                  (doador.CPF == null || doador.CNPJ == null)
-                            select doador;
 
-                return query.ToList();
+                IEnumerable<object> doadores = RetornaDoadoresColaboradores();
+                return doadores;
+
+                //return query.ToList();
             }
             catch (Exception ex)
             {
@@ -120,6 +122,34 @@ namespace ProjectSafeHostel.Dados.Repositories
             catch (Exception ex)
             {
                 throw new Exception($"Erro ao excluir doador: {ex.Message}");
+            }
+        }
+
+        private IEnumerable<object> RetornaDoadoresColaboradores()
+        {
+            try
+            {
+                List<Doador> doadores = _contexto.Doador.ToList();
+                List<Colaborador> colaborador = _contexto.Colaborador.Where(c => c.DATA_TERMINACAO == null && c.TERMINACAO_FLAG == 0).ToList();
+
+                List<DoadorColaboradorViewModel> doador_Colaborador = doadores
+                    .Join(
+                        colaborador,
+                        doade => doade.COLABORADOR_ID,
+                        coaed => coaed.COLABORADOR_ID,
+                        (doade, coaed) => new DoadorColaboradorViewModel
+                        {
+                            Doador = doade,
+                            Colaborador = coaed
+                        }
+                    )
+                    .ToList();
+
+                return (IEnumerable<object>)doador_Colaborador;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao buscar todos os doadores: {ex.Message}");
             }
         }
 

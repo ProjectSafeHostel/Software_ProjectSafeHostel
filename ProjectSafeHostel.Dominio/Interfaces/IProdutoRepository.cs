@@ -9,7 +9,7 @@ namespace ProjectSafeHostel.Dominio.Interfaces
 {
     public interface IProdutoRepository
     {
-        Task<IEnumerable<Produto>> BuscarTodos();
+        IEnumerable<Produto> BuscarTodos();
         Task<Produto> BuscarPorId(int id);
         Task InserirProduto(Produto produto);
         Task AtualizarProduto(Produto produto);

@@ -42,11 +42,11 @@ namespace ProjectSafeHostel.Dados.Repositories
             }
         }
 
-        public async Task<IEnumerable<ProdutoFamilia>> BuscarTodos()
+        public IEnumerable<ProdutoFamilia> BuscarTodos()
         {
             try
             {
-                return await _contexto.ProdutoFamilia.ToListAsync();
+                return _contexto.ProdutoFamilia.ToList();
             }
             catch (Exception ex)
             {

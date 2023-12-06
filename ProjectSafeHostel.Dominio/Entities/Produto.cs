@@ -13,7 +13,7 @@ namespace ProjectSafeHostel.Dominio.Entities
         {
             PRODUTO_DESC = pRODUTO_DESC;
             PRODUTO_VALOR = pRODUTO_VALOR;
-            PERECIVEL_FLAG = 0;
+            PERECIVEL_FLAG = pERECIVEL_FLAG;
             PESO_ITEM = pESO_ITEM;
             PRODUTO_FAMILIA_ID = pRODUTO_FAMILIA_ID;
             ADMINISTRADOR_ID = aDMINISTRADOR_ID;
@@ -33,7 +33,7 @@ namespace ProjectSafeHostel.Dominio.Entities
         public int PRODUTO_ID { get; private set; }
         public string PRODUTO_DESC { get; private set; }
         public decimal PRODUTO_VALOR { get; private set; }
-        public int PERECIVEL_FLAG { get; private set; } = 0;
+        public int PERECIVEL_FLAG { get; private set; }
         public decimal PESO_ITEM { get; private set; }
         public int PRODUTO_FAMILIA_ID { get; private set; }
         public int ADMINISTRADOR_ID { get; private set; }

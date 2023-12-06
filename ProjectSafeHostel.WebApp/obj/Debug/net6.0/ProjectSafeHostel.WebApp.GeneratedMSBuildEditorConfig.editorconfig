@@ -5,53 +5,52 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectSafeHostel.WebApp
 build_property.RootNamespace = ProjectSafeHostel.WebApp
-build_property.ProjectDir = C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.WebApp\
+build_property.ProjectDir = D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\n\Documents\Repositorios\Uniaraxa\4° Periodo\Projeto Integrador\ProjectSafeHostel\ProjectSafeHostel.WebApp
+build_property.MSBuildProjectDirectory = D:\Uniaraxa\Projeto integrador\Software_ProjectSafeHostel\ProjectSafeHostel.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/CadastrarFuncionario.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/CadastrarFuncionario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cQ2FkYXN0cmFyRnVuY2lvbmFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/Index.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Funcionario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Home/Index.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Home/Privacy.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Login/Index.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/Error.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/_ViewImports.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/_ViewStart.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/n/Documents/Repositorios/Uniaraxa/4° Periodo/Projeto Integrador/ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/_Layout.cshtml]
+[D:/Uniaraxa/Projeto integrador/Software_ProjectSafeHostel/ProjectSafeHostel.WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-psp1ef53qw

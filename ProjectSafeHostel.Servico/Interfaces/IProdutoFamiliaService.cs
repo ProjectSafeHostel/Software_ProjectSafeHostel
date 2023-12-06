@@ -10,7 +10,7 @@ namespace ProjectSafeHostel.Servico.Interfaces
 {
     public interface IProdutoFamiliaService
     {
-        Task<IEnumerable<ProdutoFamiliaViewModel>> BuscarTodos();
+        IEnumerable<ProdutoFamiliaViewModel> BuscarTodos();
         Task<ProdutoFamiliaViewModel> BuscarPorId(int id);
         Task InserirFamilia(NovoProdutoFamiliaViewModel familia);
         Task AtualizarFamilia(int id);
