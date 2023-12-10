@@ -90,6 +90,7 @@ namespace ProjectSafeHostel.Dados.Repositories
                 List<Doacao> doacoes = _contexto.Doacao.ToList();
                 List<Doador> doadores = _contexto.Doador.ToList();
                 List<Produto> produtos = _contexto.Produto.ToList();
+                List<Colaborador> colaboradores = _contexto.Colaborador.ToList();
 
                 var resultadoJoin = doacoes
                     .Join(
@@ -107,6 +108,18 @@ namespace ProjectSafeHostel.Dados.Repositories
                             Doacao = doacaoProduto.Doacao,
                             Produto = doacaoProduto.Produto,
                             Doador = doador
+                        }
+                    )
+                    .Join(
+                        colaboradores,
+                        doacaoProdutoDoador => doacaoProdutoDoador.Doador.COLABORADOR_ID,
+                        colaborador => colaborador.COLABORADOR_ID,
+                        (doacaoProdutoDoador, colaborador) => new
+                        {
+                            Doacao = doacaoProdutoDoador.Doacao,
+                            Produto = doacaoProdutoDoador.Produto,
+                            Doador = doacaoProdutoDoador.Doador,
+                            Colaborador = colaborador
                         }
                     )
                     .ToList();
