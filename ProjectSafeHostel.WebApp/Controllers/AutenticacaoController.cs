@@ -30,7 +30,7 @@ namespace ProjectSafeHostel.WebApp.Controllers
 
             if (!podeLogar)
             {
-                BadRequest("Login inválido");
+                return BadRequest("Login inválido");
             }
 
             return Ok("Autenticado");

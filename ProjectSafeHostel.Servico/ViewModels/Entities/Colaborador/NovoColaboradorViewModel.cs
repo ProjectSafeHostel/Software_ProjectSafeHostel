@@ -11,8 +11,8 @@ namespace ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador
     {
         public string NOME { get; set; }
         public string SOBRENOME { get; set; }
-        public DateTime DATA_NASCIMENTO { get; set; }
-        public string CPF { get; set; }
+        public DateTime? DATA_NASCIMENTO { get; set; }
+        public string? CPF { get; set; }
 
         [JsonIgnore]
         public char TIPO { get; set; }

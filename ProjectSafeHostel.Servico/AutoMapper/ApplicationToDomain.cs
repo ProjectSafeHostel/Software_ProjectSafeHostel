@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ProjectSafeHostel.Dominio.Entities;
+using ProjectSafeHostel.Dominio.ValueObject;
 using ProjectSafeHostel.Servico.ViewModels;
 using ProjectSafeHostel.Servico.ViewModels.Cadastros;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Cliente;
@@ -9,6 +10,7 @@ using ProjectSafeHostel.Servico.ViewModels.Entities.Endereco;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Produto;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoCategoria;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoFamilia;
+using ProjectSafeHostel.Servico.ViewModels.ValueObject.Doacao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -108,6 +110,23 @@ namespace ProjectSafeHostel.Servico.AutoMapper
                    DateTime.Now, 
                    c.DATA_TERMINACAO, 
                    0
+                ));
+
+            #endregion
+
+            #region - Doacao
+
+            CreateMap<DoacaoViewModel, Doacao>()
+               .ConstructUsing(d => new Doacao(
+                   d.DOACAO_ID,
+                   d.DOADOR_ID,
+                   d.PRODUTO_ID
+                ));
+
+            CreateMap<NovaDoacaoViewModel, Doacao>()
+               .ConstructUsing(d => new Doacao(
+                   d.DOADOR_ID,
+                   d.PRODUTO_ID
                 ));
 
             #endregion

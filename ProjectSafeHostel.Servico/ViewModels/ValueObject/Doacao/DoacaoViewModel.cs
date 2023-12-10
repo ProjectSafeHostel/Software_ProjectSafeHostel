@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectSafeHostel.Servico.ViewModels.ValueObject
+namespace ProjectSafeHostel.Servico.ViewModels.ValueObject.Doacao
 {
     public class DoacaoViewModel
     {

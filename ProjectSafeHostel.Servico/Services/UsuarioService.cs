@@ -29,7 +29,7 @@ namespace ProjectSafeHostel.Servico.Services
                 .Autenticar(usuario.Login, usuario.Senha);
 
             if (usuarioAutenticado == null)
-                throw new ApplicationException("Login/Senha inválidos ou não existe");
+                return false;
 
             return true;
         }

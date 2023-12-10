@@ -2,7 +2,6 @@
 using ProjectSafeHostel.Dominio.Entities;
 using ProjectSafeHostel.Dominio.Interfaces;
 using ProjectSafeHostel.Servico.Interfaces;
-using ProjectSafeHostel.Servico.ViewModels.Buscas;
 using ProjectSafeHostel.Servico.ViewModels.Cadastros;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
@@ -72,7 +71,6 @@ namespace ProjectSafeHostel.Servico.Services
             {
                 var doadores = _doadorRepository.BuscarTodos();
 
-                //return _mapper.Map<IEnumerable<BuscarDoadorViewModel>>(doadoresComColaboradores);
                 return doadores;
             }
             catch (Exception ex)
@@ -99,10 +97,15 @@ namespace ProjectSafeHostel.Servico.Services
 
         public async Task InserirDoador(CadastrarDoadorViewModel doador)
         {
-            doador.Colaborador.TIPO = 'D';
             var novoColaborador = _mapper.Map<Colaborador>(doador.Colaborador);
+
+            if(novoColaborador.CPF.Length == 14)
+            {
+                novoColaborador.CPF = "";
+            }
             novoColaborador.DATA_CONTRATACAO = DateTime.Now;
             novoColaborador.DATA_TERMINACAO = null;
+            novoColaborador.TIPO = 'D';
             await _colaboradorRepository.InserirColaborador(novoColaborador);
 
             int colaboradorId = await _colaboradorRepository.BuscarId();

@@ -1,5 +1,4 @@
-﻿using ProjectSafeHostel.Servico.ViewModels.Buscas;
-using ProjectSafeHostel.Servico.ViewModels.Cadastros;
+﻿using ProjectSafeHostel.Servico.ViewModels.Cadastros;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Colaborador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using System;

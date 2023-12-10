@@ -28,6 +28,9 @@ builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 
+builder.Services.AddScoped<IDoacaoRepository, DoacaoRepository>();
+builder.Services.AddScoped<IDoacaoService, DoacaoService>();
+
 builder.Services.AddScoped<IDoadorRepository, DoadorRepository>();
 builder.Services.AddScoped<IDoadorService, DoadorService>();
 

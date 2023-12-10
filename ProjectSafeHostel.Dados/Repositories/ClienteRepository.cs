@@ -45,7 +45,7 @@ namespace ProjectSafeHostel.Dados.Repositories
             }        
             catch (Exception ex)
             {
-                throw new Exception($"Erro ao excluir cliente: {ex.Message}");
+                throw new Exception($"Erro ao buscar cliente: {ex.Message}");
             }
         }
 
@@ -71,7 +71,7 @@ namespace ProjectSafeHostel.Dados.Repositories
             }
             catch (Exception ex)
             {
-                throw new Exception($"Erro ao excluir cliente: {ex.Message}");
+                throw new Exception($"Erro ao inserir cliente: {ex.Message}");
             }
         }
     }

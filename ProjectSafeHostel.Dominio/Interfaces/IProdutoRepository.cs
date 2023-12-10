@@ -11,6 +11,7 @@ namespace ProjectSafeHostel.Dominio.Interfaces
     {
         IEnumerable<Produto> BuscarTodos();
         Task<Produto> BuscarPorId(int id);
+        Task<int> BuscarId();
         Task InserirProduto(Produto produto);
         Task AtualizarProduto(Produto produto);
         Task ExcluirProduto(Produto produto);

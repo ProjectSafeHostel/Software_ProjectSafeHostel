@@ -42,6 +42,13 @@ namespace ProjectSafeHostel.Dados.Repositories
             }
         }
 
+        public async Task<int> BuscarId()
+        {
+            var ultimoId = await _contexto.Produto.MaxAsync(entidade => (int?)entidade.PRODUTO_ID) ?? 0;
+
+            return ultimoId;
+        }
+
         public IEnumerable<Produto> BuscarTodos()
         {
             try

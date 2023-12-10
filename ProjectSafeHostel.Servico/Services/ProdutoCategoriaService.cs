@@ -2,8 +2,6 @@
 using ProjectSafeHostel.Dominio.Entities;
 using ProjectSafeHostel.Dominio.Interfaces;
 using ProjectSafeHostel.Servico.Interfaces;
-using ProjectSafeHostel.Servico.ViewModels.Buscas;
-using ProjectSafeHostel.Servico.ViewModels.Entities.Doador;
 using ProjectSafeHostel.Servico.ViewModels.Entities.ProdutoCategoria;
 using System;
 using System.Collections.Generic;

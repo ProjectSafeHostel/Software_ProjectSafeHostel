@@ -65,33 +65,10 @@ namespace ProjectSafeHostel.Dados.Repositories
         {
             try
             {
-                //var doadoresComColaboradores = _contexto.Doador
-                //    .Include(d => d.COLABORADOR)
-                //    .Select(d => new
-                //    {
-                //        DoadorId = d.DOADOR_ID,
-                //        d.CPF,
-                //        d.CNPJ,
-                //        ColaboradorId = d.COLABORADOR.COLABORADOR_ID,
-                //        Nome = d.COLABORADOR.NOME,
-                //        Sobrenome = d.COLABORADOR.SOBRENOME,
-                //        DataNascimento = d.COLABORADOR.DATA_NASCIMENTO,
-                //        Tipo = d.COLABORADOR.TIPO,
-                //        ColaboradorCPF = d.COLABORADOR.CPF,
-                //        DataContratacao = d.COLABORADOR.DATA_CONTRATACAO,
-                //        DataTerminacao = d.COLABORADOR.DATA_TERMINACAO,
-                //        TerminacaoFlag = d.COLABORADOR.TERMINACAO_FLAG
-                //    })
-                //    .Where(d => d.Tipo == 'D' &&
-                //            (d.CNPJ == null || d.CPF == null) &&
-                //            (d.DataTerminacao == null || d.DataTerminacao == DateTime.MinValue))
-                //    .ToList();
-
 
                 IEnumerable<object> doadores = RetornaDoadoresColaboradores();
                 return doadores;
 
-                //return query.ToList();
             }
             catch (Exception ex)
             {
@@ -145,7 +122,7 @@ namespace ProjectSafeHostel.Dados.Repositories
                     )
                     .ToList();
 
-                return (IEnumerable<object>)doador_Colaborador;
+                return doador_Colaborador;
             }
             catch (Exception ex)
             {
