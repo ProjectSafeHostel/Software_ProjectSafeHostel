@@ -61,9 +61,6 @@ namespace ProjectSafeHostel.Servico.Services
 
             if (buscaProduto == null) throw new ApplicationException("Não é possível excluir um produto que não existe!");
 
-            var buscaCategoria = await _produtoRepository.BuscarPorId(buscaProduto.PRODUTO_ID);
-            await _produtoRepository.ExcluirProduto(buscaCategoria);
-
             await _produtoRepository.ExcluirProduto(buscaProduto);
         }
 

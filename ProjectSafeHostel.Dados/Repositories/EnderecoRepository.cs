@@ -1,4 +1,5 @@
-﻿using ProjectSafeHostel.Dados.EntityFramework;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectSafeHostel.Dados.EntityFramework;
 using ProjectSafeHostel.Dominio.Entities;
 using ProjectSafeHostel.Dominio.Interfaces;
 using System;
@@ -28,9 +29,11 @@ namespace ProjectSafeHostel.Dados.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Endereco> BuscarPorId(int id)
+        public async Task<Endereco> BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            var endereco = await _contexto.Endereco.Where(c => c.COLABORADOR_ID == id).FirstOrDefaultAsync();
+
+            return endereco;
         }
 
         public async Task ExcluirEndereco(Endereco endereco)

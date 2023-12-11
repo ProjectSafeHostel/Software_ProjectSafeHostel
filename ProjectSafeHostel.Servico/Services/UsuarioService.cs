@@ -34,7 +34,7 @@ namespace ProjectSafeHostel.Servico.Services
             return true;
         }
 
-        public async Task Cadastrar(UsuarioViewModel usuarioViewModel)
+        public async Task Cadastrar(NovoUsuarioViewModel usuarioViewModel)
         {
             var usuario = _mapper.Map<Usuario>(usuarioViewModel);
             await _usuarioRepository.Cadastrar(usuario);

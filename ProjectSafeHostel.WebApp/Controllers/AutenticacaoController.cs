@@ -36,6 +36,14 @@ namespace ProjectSafeHostel.WebApp.Controllers
             return Ok("Autenticado");
         }
 
+        [HttpPost("adicionar")]
+        public async Task<IActionResult> PostCadastrar(NovoUsuarioViewModel usuario)
+        {
+            await _usuarioService.Cadastrar(usuario);
+
+            return Ok("Usuário cadastrado com sucesso");
+        }
+
         #endregion
 
         #endregion
