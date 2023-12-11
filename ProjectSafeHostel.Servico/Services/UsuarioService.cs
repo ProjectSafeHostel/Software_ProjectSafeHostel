@@ -23,15 +23,16 @@ namespace ProjectSafeHostel.Servico.Services
             _mapper = mapper;
         }
 
-        public async Task<bool> Autenticar(NovoUsuarioViewModel usuario)
+        public async Task<UsuarioViewModel> Autenticar(NovoUsuarioViewModel usuario)
         {
-            var usuarioAutenticado = await _usuarioRepository
-                .Autenticar(usuario.Login, usuario.Senha);
+            var usuarioBuscado = await _usuarioRepository.Autenticar(usuario.Login, usuario.Senha);
+
+            var usuarioAutenticado = _mapper.Map<UsuarioViewModel>(usuarioBuscado);
 
             if (usuarioAutenticado == null)
-                return false;
+                return null;
 
-            return true;
+            return usuarioAutenticado;
         }
 
         public async Task Cadastrar(NovoUsuarioViewModel usuarioViewModel)

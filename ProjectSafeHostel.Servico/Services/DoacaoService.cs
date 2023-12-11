@@ -72,8 +72,8 @@ namespace ProjectSafeHostel.Servico.Services
 
             Produto produtoExcluido = await _produtoRepository.BuscarPorId(produtoID);
 
-            await _produtoRepository.ExcluirProduto(produtoExcluido);
             await _doacaoRepository.ExcluirDoacao(buscaDoacao);
+            await _produtoRepository.ExcluirProduto(produtoExcluido);        
         }
 
         public async Task InserirDoacao(CadastrarDoacaoViewModel novaDoacao)

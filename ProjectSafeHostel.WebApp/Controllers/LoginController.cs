@@ -21,9 +21,9 @@ namespace ProjectSafeHostel.WebApp.Controllers
         [HttpPost()]
         public async Task<IActionResult> Post(NovoUsuarioViewModel usuario)
         {
-            bool podeLogar = await _usuarioService.Autenticar(usuario);
+            var usuarioAutenticado = await _usuarioService.Autenticar(usuario);
 
-            if (!podeLogar)
+            if (usuarioAutenticado == null)
             {
                 BadRequest("Login inválido");
             }
